@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <!-- Local Stylesheet -->
+  <link rel="stylesheet" href="css/main.css">
+
+  <title>Frontend Mentor | Room homepage</title>
+</head>
+
+<body>
+  <main>
+
+    <!-- Top Section -->
+
+    <section class="hero">
+      <nav class="navbar">
+        <a href="https://efecollins.github.io/room/dist" class="nav-brand">room</a>
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Shop</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+          <img class="hamburger" src="images/icon-hamburger.svg" alt="">
+        </ul>
+      </nav>
+      <div class="nav-mobile">
+        <ul class="navbar-nav-mobile">
+          <li class="navbar-nav-mobile-item">
+            <a class="navbar-nav-mobile-link" href="#">Home</a>
+          </li>
+          <li class="navbar-nav-mobile-item">
+            <a class="navbar-nav-mobile-link" href="#">Shop</a>
+          </li>
+          <li class="navbar-nav-mobile-item">
+            <a class="navbar-nav-mobile-link" href="#">About</a>
+          </li>
+          <li class="navbar-nav-mobile-item">
+            <a class="navbar-nav-mobile-link" href="#">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="top-section slideshow-container">
+      <div class="slides fade">
+        <img class="slides-img-desktop" src="images/desktop/desktop-image-hero-1.jpg" alt="Sit to watch plants grow">
+        <img class="slides-img-mobile" src="images/mobile/mobile-image-hero-1.jpg" alt="Sit to watch plants grow">
+        <div class="slides-text">
+          <h1 class="slides-heading">Discover innovative ways to decorate</h1>
+          <p class="slides-heading_paragraph">We provide unmatched quality, comfort, and style for property owners
+            across the country.
+            Our experts combine form and function in bringing your vision to life. Create a room in your
+            own style with our collection and make your property a reflection of you and what you love.
+          </p>
+          <p class="slides-button">Shop now <img src="images/icon-arrow.svg" alt=""></p>
+        </div>
+      </div>
+
+      <div class="slides fade">
+        <img class="slides-img-desktop" src="images/desktop/desktop-image-hero-2.jpg" alt="Chairs">
+        <img class="slides-img-mobile" src="images/mobile/mobile-image-hero-2.jpg" alt="Chairs">
+        <div class="slides-text">
+          <h1 class="slides-heading">We are available all across the globe</h1>
+          <p class="slides-heading_paragraph">With stores all over the world, it's easy for you to find furniture for
+            your home or place of business.
+            Locally, we’re in most major cities throughout the country. Find the branch nearest you using our
+            store locator. Any questions? Don't hesitate to contact us today.
+          </p>
+          <p class="slides-button">Shop now <img src="images/icon-arrow.svg" alt=""></p>
+        </div>
+      </div>
+
+      <div class="slides fade">
+        <img class="slides-img-desktop" src="images/desktop/desktop-image-hero-3.jpg" alt="Photoshoot chair">
+        <img class="slides-img-mobile" src="images/mobile/mobile-image-hero-3.jpg" alt="Photoshoot chair">
+        <div class="slides-text">
+          <h1 class="slides-heading">Manufactured with the best materials</h1>
+          <p class="slides-heading_paragraph">Our modern furniture store provide a high level of quality. Our company
+            has invested in advanced technology
+            to ensure that every product is made as perfect and as consistent as possible. With three decades of
+            experience in this industry, we understand what customers want for their home and office.
+          </p>
+          <p class="slides-button">Shop now <img src="images/icon-arrow.svg" alt=""></p>
+        </div>
+      </div>
+
+      <a class="prev" onclick="plusSlides(-1)" tabindex="0"><img src="images/icon-angle-left.svg" alt=""></a>
+      <a class="next" onclick="plusSlides(1)" tabindex="0"><img src="images/icon-angle-right.svg" alt=""></a>
+
+    </section>
+
+    <section class="bottom-section">
+      <div>
+        <img src="images/image-about-dark.jpg" alt="">
+      </div>
+
+      <div class="about">
+        <h3 class="about-heading">About our furniture</h3>
+        <p class="about-paragraph">Our multifunctional collection blends design and function to suit your individual
+          taste.
+          Make each room unique, or pick a cohesive theme that best express your interests and what
+          inspires you. Find the furniture pieces you need, from traditional to contemporary styles
+          or anything in between. Product specialists are available to help you create your dream space.
+        </p>
+      </div>
+
+      <div>
+        <img src="images/image-about-light.jpg" alt="">
+      </div>
+    </section>
+  </main>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="https://efecollins.github.io/new-pweb/dist">Efosa Collins Evbowe</a>.
+  </div>
+  <script src="js/slide.js"></script>
+  <script src="js/menu.js"></script>
+</body>
+
+</html>

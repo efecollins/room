@@ -1,0 +1,187 @@
+@import 'config';
+@import 'responsive';
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+
+  a {
+    color: hsl(228, 45%, 44%);
+  }
+}
+
+// Navbar
+
+.hero {
+
+  .nav-mobile {
+    display: none;
+  }
+
+  .navbar {
+    position: fixed;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    padding: 3.5%;
+
+    .hamburger {
+      display: none;
+    }
+  
+
+    a {
+      color: $white;
+      text-decoration: none;
+    }
+
+    .nav-brand {
+      margin-right: 12%;
+      font-size: 1.5rem;
+    }
+
+    &-nav {
+      display: flex;
+
+      .nav-item {
+        position: relative;
+        list-style-type: none;
+        padding: 8%;
+        text-transform: lowercase;
+        cursor: pointer;
+
+        &::after {
+          content: '';
+          position: absolute;
+          bottom: 0;
+          left: 30%;
+          height: 3px;
+          width: 20px;
+          text-align: center;
+          background-color: $white;
+          visibility: hidden;
+          transition: 0.2s ease-in-out;
+        }
+
+        &:hover::after {
+          visibility: visible;
+        }
+      }
+    }
+  }
+}
+
+
+// Carousel
+
+.slideshow-container {
+  position: relative;
+  margin: auto;
+
+  .slides {
+    display: none;
+
+    &-img-desktop {
+      display: flex;
+    }
+
+    &-img-mobile {
+      display: none;
+    }
+
+    &-text {
+      position: absolute;
+      top: 30%;
+      width: 30%;
+      margin-left: 63%;
+    }
+
+    &-heading {
+      color: $black;
+      font-size: 2.5rem;
+      font-weight: 900;
+      margin-bottom: 5%;
+
+      &_paragraph {
+        color: $dark-gray;
+        width: 70%;
+        margin-bottom: 5%;
+      }
+    }
+
+    &-button {
+      text-transform: uppercase;
+      letter-spacing: 7px;
+      transition: 0.2s ease-in-out;
+
+      &:hover {
+        cursor: pointer;
+        color: $dark-gray;
+      }
+
+      img {
+        margin-left: 5%;
+        }
+      }
+    }
+  }
+
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    background-color: $black;
+    bottom: 0.8%;
+    width: auto;
+    padding: 20px;
+    transition: 0.6s ease;
+    user-select: none;
+
+    &:hover {
+      background-color: $very_dark-gray;
+    }
+  }
+
+  .prev {
+    right: 44.1%;
+  }
+
+  .next {
+    right: 41%;
+  }
+
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+
+
+// About Section / Bottom
+
+.bottom-section {
+  display: flex;
+  flex-direction: row;
+
+  .about {
+    padding: 7%;
+    padding-top: 4%;
+
+    &-heading {
+      text-transform: uppercase;
+      letter-spacing: 5px;
+      font-weight: 900;
+      color: $black;
+      margin-bottom: 4%;
+    }
+
+    &-paragraph {
+      color: $dark-gray;
+    }
+  }
+}
+
+@include mobile;
