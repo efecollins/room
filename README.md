@@ -30,7 +30,7 @@ Users should be able to:
 ### Screenshot
 
 ![Desktop Screenshot](./dist/images/screenshot/screenshot_desktop.png)
-![Mobile Screenshot](./dist/images/screenshot/screenshot_mobile.png)
+![Mobile Screenshot](./dist/images/screenshot/screenshot_mobile .png)
 
 ### Links
 
